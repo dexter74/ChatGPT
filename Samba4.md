@@ -116,8 +116,11 @@ sudo systemctl status samba;
 ```
 sudo systemctl enable samba;
 ```
+<br />
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 15. Résumé
-Et voilà, vous avez installé et configuré Samba4 sur votre système Linux ! Vous pouvez maintenant commencer à utiliser Samba4 pour partager des fichiers et des imprimantes avec d'autres ordinateurs sur 
-votre réseau.
+```
+Et voilà, vous avez installé et configuré Samba4 sur votre système Linux !
+Vous pouvez maintenant commencer à utiliser Samba4 pour partager des fichiers et des imprimantes avec d'autres ordinateurs sur votre réseau.
+```
