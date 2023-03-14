@@ -6,8 +6,8 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 1. Vérifiez que votre système est à jour en exécutant la commande suivante :
 ```
-sudo apt update;
-sudo apt upgrade -y;
+apt update;
+apt upgrade -y;
 ```
 
 <br />
@@ -15,15 +15,15 @@ sudo apt upgrade -y;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 2. Installez les paquets nécessaires pour Samba4 en exécutant la commande suivante :
 ```
-sudo apt install -y samba;
-sudo apt install -y krb5-user;
-sudo apt install -y krb5-config;
-sudo apt install -y winbind;
-sudo apt install -y libpam-winbind;
-sudo apt install -y libnss-winbind;
-sudo apt install -y libpam-krb5;
-sudo apt install -y libpam-ccreds;
-sudo apt install -y libpam-modules;
+apt install -y samba;
+apt install -y krb5-user;
+apt install -y krb5-config;
+apt install -y winbind;
+apt install -y libpam-winbind;
+apt install -y libnss-winbind;
+apt install -y libpam-krb5;
+apt install -y libpam-ccreds;
+apt install -y libpam-modules;
 ```
 
 <br />
@@ -31,7 +31,7 @@ sudo apt install -y libpam-modules;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 3. Créez un utilisateur pour Samba4 en exécutant la commande suivante :
 ```
-sudo adduser --system --no-create-home --disabled-login --disabled-password --group samba;
+adduser --system --no-create-home --disabled-login --disabled-password --group samba;
 ```
 
 <br />
@@ -77,7 +77,7 @@ make;
 
 #### 9. Installez Samba4 en exécutant la commande suivante :
 ```
-sudo make install;
+make install;
 ```
 
 <br />
@@ -85,7 +85,7 @@ sudo make install;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 10. Configurez Samba4 en éditant le fichier de configuration smb.conf :
 ```
-sudo nano /usr/local/samba/etc/smb.conf;
+nano /usr/local/samba/etc/smb.conf;
 ```
 
 <br />
@@ -98,7 +98,7 @@ sudo nano /usr/local/samba/etc/smb.conf;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 12. Démarrez le service Samba4 en exécutant la commande suivante :
 ```
-sudo systemctl start samba;
+systemctl start samba;
 ```
 
 <br />
@@ -106,7 +106,7 @@ sudo systemctl start samba;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 13. Vérifiez que le service Samba4 est en cours d'exécution en exécutant la commande suivante :
 ```
-sudo systemctl status samba;
+systemctl status samba;
 ```
 
 <br />
@@ -114,7 +114,7 @@ sudo systemctl status samba;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 14. Configurez Samba4 pour qu'il démarre automatiquement au démarrage du système en exécutant la commande suivante :
 ```
-sudo systemctl enable samba;
+systemctl enable samba;
 ```
 <br />
 
