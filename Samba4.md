@@ -39,7 +39,7 @@ apt install -y libpam-modules;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### 3. Créez un utilisateur pour Samba4 en exécutant la commande suivante :
 ```
-adduser --system --no-create-home --disabled-login --disabled-password --group samba;
+/usr/sbin/adduser  --system --no-create-home --disabled-login --disabled-password --group samba;
 ```
 
 <br />
