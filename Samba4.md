@@ -4,14 +4,31 @@
 <br />
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 0. Pré-requis (En cours)
+### 0. Pré-requis
+
+##### A. Sources.list
 ```
 sed -i -e "s/^deb cdrom/#deb cdrom/g" /etc/apt/sources.list;
 apt install -y sudo;
+```
 
-# Etape 7:
+##### B. Python
+```
+apt install -y libreadline-gplv2-dev; # PROBLEM
+apt install -y libncursesw5-dev
+apt install -y libssl-dev
+apt install -y libsqlite3-dev
+apt install -y libgdbm-dev
+apt install -y libc6-dev
+apt install -y libbz2-dev
+apt install -y libffi-dev zlib1g-dev
+apt install -y tk-dev
+apt install -y wget;
 apt install -y build-essential;
-apt install -y gcc;
+
+wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz; tar xzf Python-3.9.1.tgz; cd Python-3.9.1;
+./configure --enable-optimizations; make -j$(nproc); make alt install;
+python3.9 --version;
 ```
  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
