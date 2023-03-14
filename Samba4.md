@@ -1,4 +1,4 @@
-### Pourrais tu me faire un guide d'installation de Samba4 ?
+#### Pourrais tu me faire un guide d'installation de Samba4 ? [SIte](https://host974.com/gpt3/)
 
 
 Bien sûr, voici un guide étape par étape pour installer Samba4 sur un système Linux :
